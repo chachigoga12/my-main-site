@@ -370,7 +370,7 @@ async function activate(id) {
       setBusy(btn, true);
       show(h('div', { class: 'result-card loading-card' }, h('span', { class: 'spinner' }), 'Searching…'));
       try {
-        var data = await apiSearch(kind, q);
+        var data = await apiSearch(kind, q.replace(" ",""));
         if (my !== counter) return;
         addHistory(kind, q); renderResult(q, data);
       } catch (err) {
