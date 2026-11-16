@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Home · Number to Info</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script>try{var t=localStorage.getItem('portal_theme');if(t==='dark'||(t==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Number to info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #F1F6F9; --ink: #0B1B3A; --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #060E20; --ink: #E6F3F7; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #060E20; --ink: #E6F3F7; color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); display: grid; place-items: center; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { margin: 0; max-width: 20ch; text-align: center; font: 700 clamp(1.8rem, 6vw, 3.2rem)/1.15 var(--font-display); letter-spacing: -.02em; text-wrap: balance; }
+</style>
 </head>
-<body data-page="home">
-<main id="page" class="container"><noscript>This site needs JavaScript.</noscript></main>
-<script src="assets/js/config.js"></script>
-<script src="assets/js/app.js"></script>
+<body>
+<h1>Our service is temporarily down. Service will be online under 24 hours</h1>
 </body>
 </html>
